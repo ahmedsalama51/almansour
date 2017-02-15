@@ -1037,6 +1037,9 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 .pagination > li > a, .pagination > li > span {
   color: #043361;
 }
-.owl-prev
-{color: #043361;}
+
+.owl-prev:hover
+{
+  color: red;
+}
 
