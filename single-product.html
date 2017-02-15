@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>eElectronics - HTML eCommerce Template</title>
+    <title>اﻟﻤﻨﺼﻮﺭ ﻟﻠﻤﻘﺎﻭﻻﺕ اﻟﻌﺎﻣﻪ ﻭﻹﺳﺘﺜﻤﺎﺭ اﻟﻌﻘﺎﺭﻯ</title>
     
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
@@ -18,9 +18,16 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
     <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,19 +41,19 @@
     <div class="header-area">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 pull-right">
                     <div class="user-menu">
                         <ul>
-                            <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
-                            <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
-                            <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
-                            <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>
-                            <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+                            <li><a href="#"><i class="fa fa-user"></i>&nbsp; حسابي</a></li>
+                            <li><a href="#"><i class="fa fa-heart"></i>&nbsp; الإعدادات</a></li>
+                            <!-- <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li> -->
+                            <li><a href="checkout.html"><i class="fa fa-user"></i>&nbsp; التسجيل</a></li>
+                            <li><a href="#"><i class="fa fa-user"></i>&nbsp; تسجيل دخول</a></li>
                         </ul>
                     </div>
                 </div>
                 
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <div class="header-right">
                         <ul class="list-unstyled list-inline">
                             <li class="dropdown dropdown-small">
@@ -68,25 +75,27 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
-    </div> <!-- End header area -->
+    </div> 
+    <!-- End header area -->
     
     <div class="site-branding-area">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-3 ">
+                    <div class="logo-img">
+                        <a href="cart.html"><img src="img/logo.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-sm-9 text-right pull-right">
                     <div class="logo">
-                        <h1><a href="index.html">e<span>Electronics</span></a></h1>
+                        <h1><a href="index.html"><span>المـنـصـور </span><p>للمقاولات العامه والإستثمار العقاري</p></a></h1>
                     </div>
                 </div>
                 
-                <div class="col-sm-6">
-                    <div class="shopping-item">
-                        <a href="cart.html">Cart - <span class="cart-amunt">$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div> <!-- End site branding area -->
@@ -94,7 +103,7 @@
     <div class="mainmenu-area">
         <div class="container">
             <div class="row">
-                <div class="navbar-header">
+                <div class="navbar-header text-right pull-right">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -102,16 +111,42 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div> 
-                <div class="navbar-collapse collapse">
+                <div class="navbar-collapse collapse  text-right pull-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop page</a></li>
-                        <li class="active"><a href="single-product.html">Single product</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="#">Category</a></li>
-                        <li><a href="#">Others</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class=" pull-right"><a href="index.html">اﻟﺮﺋﻴﺴﻴﻪ &nbsp;<i class="fa fa-home" aria-hidden="true"></i></a></li>
+                        <li class="pull-right"><a href="#">ﺭﺳﻢ ﻫﻨﺪﺳﻲ &nbsp;<i class="fa fa-map fa-fw" aria-hidden="true"></i></a></li>
+                        <li class="active pull-right"><a href="single-product.html">ﺇﻧﺸﺎﺋﺎﺕ &nbsp;<i class="fa fa-ravelry" aria-hidden="true"></i></a></li>
+                        <li class="pull-right"><a href="#">ﺗﺸﻄﻴﺒﺎﺕ ﻋﺎﻣﻪ &nbsp;<i class="fa fa-building" aria-hidden="true"></i></a></li>
+                        <li class="pull-right"><a href="checkout.html">ﺗﺴﻮﻳﻖ &nbsp;<i class="fa fa-line-chart" aria-hidden="true"></i>
+                        </a></li>
+                        <li class="pull-right"><a href="cart.html">ﺇﺳﺘﺼﻼﺡ ﺃﺭاﺿﻰ &nbsp;<i class="fa fa-tree" aria-hidden="true"></i></a></li>
+                        <li class="pull-right"><a href="#map"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;  ﺇﺗﺼﻞ ﺑﻨﺎ </a></li>
+                        <li class="pull-right"><a href="shop.html">ﺷﻜﺎﻭﻱ ﻭﻣﻘﺘﺮﺣﺎﺕ &nbsp;<i class="fa fa-handshake-o" aria-hidden="true"></i></a></li>
+                        <!-- <li class="pull-right dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
+                                <span class="caret"></span> ﺗﺸﻄﻴﺒﺎﺕ ﻋﺎﻣﻪ 
+                                &nbsp;<i class="fa fa-building" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu text-right" role="menu">
+                                <li >
+                                    <a href="#">ﺭﺳﻢ ﻫﻨﺪﺳﻲ 
+                                        &nbsp;<i class="fa fa-map fa-fw" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a href="#">ﺭﺳﻢ ﻫﻨﺪﺳﻲ 
+                                        &nbsp;<i class="fa fa-map fa-fw" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a href="#">ﺭﺳﻢ ﻫﻨﺪﺳﻲ 
+                                        &nbsp;<i class="fa fa-map fa-fw" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+
+                        </li> --> 
                     </ul>
                 </div>  
             </div>
@@ -123,7 +158,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="product-bit-title text-center">
-                        <h2>Shop</h2>
+                        <!-- <h2>Shop</h2> -->
                     </div>
                 </div>
             </div>
@@ -134,17 +169,17 @@
     <div class="single-product-area">
         <div class="zigzag-bottom"></div>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="single-sidebar">
-                        <h2 class="sidebar-title">Search Products</h2>
-                        <form action="">
-                            <input type="text" placeholder="Search products...">
-                            <input type="submit" value="Search">
+            <div class="row  ">
+                <!-- <div class="col-md-4 pull-right">
+                    <div class="single-sidebar text-right">
+                        <h2 class="sidebar-title">البحث عن عقارات</h2>
+                        <form action="" class="text-right">
+                            <input class="text-right" type="text" placeholder="البحث عن العقارات...">
+                            <input type="submit" value="إبحث">
                         </form>
                     </div>
                     
-                    <div class="single-sidebar">
+                    <div class="single-sidebar text-right">
                         <h2 class="sidebar-title">Products</h2>
                         <div class="thubmnail-recent">
                             <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
@@ -176,7 +211,7 @@
                         </div>
                     </div>
                     
-                    <div class="single-sidebar">
+                    <div class="single-sidebar text-right">
                         <h2 class="sidebar-title">Recent Posts</h2>
                         <ul>
                             <li><a href="">Sony Smart TV - 2015</a></li>
@@ -186,17 +221,17 @@
                             <li><a href="">Sony Smart TV - 2015</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
                 
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <div class="product-content-right">
-                        <div class="product-breadcroumb">
+                        <!-- <div class="product-breadcroumb text-right">
                             <a href="">Home</a>
                             <a href="">Category Name</a>
                             <a href="">Sony Smart TV - 2015</a>
-                        </div>
+                        </div> -->
                         
-                        <div class="row">
+                        <div class="row text-right">
                             <div class="col-sm-6">
                                 <div class="product-images">
                                     <div class="product-main-img">
@@ -205,17 +240,19 @@
                                     
                                     <div class="product-gallery">
                                         <img src="img/product-thumb-1.jpg" alt="">
-                                        <img src="img/product-thumb-2.jpg" alt="">
-                                        <img src="img/product-thumb-3.jpg" alt="">
-                                        <img src="img/product-thumb-4.jpg" alt="">
+                                        <img src="img/product-thumb-1.jpg" alt="">
+                                        <img src="img/product-thumb-1.jpg" alt="">
+                                        <img src="img/product-thumb-1.jpg" alt="">
+                                        <img src="img/product-thumb-1.jpg" alt="">
+                                        <img src="img/product-thumb-1.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
                             
                             <div class="col-sm-6">
-                                <div class="product-inner">
-                                    <h2 class="product-name">Sony Smart TV - 2015</h2>
-                                    <div class="product-inner-price">
+                                <div class="product-inner text-right">
+                                    <h2 class="product-name">برج الزهراء</h2>
+                                    <!-- <div class="product-inner-price">
                                         <ins>$700.00</ins> <del>$800.00</del>
                                     </div>    
                                     
@@ -224,31 +261,32 @@
                                             <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
                                         </div>
                                         <button class="add_to_cart_button" type="submit">Add to cart</button>
-                                    </form>   
+                                    </form>    -->
                                     
                                     <div class="product-inner-category">
-                                        <p>Category: <a href="">Summer</a>. Tags: <a href="">awesome</a>, <a href="">best</a>, <a href="">sale</a>, <a href="">shoes</a>. </p>
+                                        <p>التصنيف: <a href="">أبراج</a>. الوسوم: <a href="">برج</a>, <a href="">سكنى</a>, <a href="">شقق</a>, <a href="">تشطيبات</a>. </p>
                                     </div> 
                                     
                                     <div role="tabpanel">
                                         <ul class="product-tab" role="tablist">
-                                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
-                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Reviews</a></li>
+                                           
+                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">الأراء</a></li>
+                                             <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">التوصيف</a></li>
                                         </ul>
                                         <div class="tab-content">
                                             <div role="tabpanel" class="tab-pane fade in active" id="home">
-                                                <h2>Product Description</h2>  
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.</p>
+                                                <h2>وصف العقار</h2>  
+                                                <p>إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء .</p>
 
-                                                <p>Mauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>
+                                                <p>إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء إنشاء .</p>
                                             </div>
                                             <div role="tabpanel" class="tab-pane fade" id="profile">
-                                                <h2>Reviews</h2>
+                                                <h2>إطرح رائيك</h2>
                                                 <div class="submit-review">
-                                                    <p><label for="name">Name</label> <input name="name" type="text"></p>
-                                                    <p><label for="email">Email</label> <input name="email" type="email"></p>
+                                                    <p><label for="name">الإسم</label> <input name="name" type="text"></p>
+                                                    <p><label for="email">البريد الإلكترونى</label> <input name="email" type="email"></p>
                                                     <div class="rating-chooser">
-                                                        <p>Your rating</p>
+                                                        <p>التقييم</p>
 
                                                         <div class="rating-wrap-post">
                                                             <i class="fa fa-star"></i>
@@ -258,8 +296,8 @@
                                                             <i class="fa fa-star"></i>
                                                         </div>
                                                     </div>
-                                                    <p><label for="review">Your review</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
-                                                    <p><input type="submit" value="Submit"></p>
+                                                    <p><label for="review">رئيك </label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
+                                                    <p><input type="submit" value="أرسل"></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -270,8 +308,9 @@
                         </div>
                         
                         
-                        <div class="related-products-wrapper">
-                            <h2 class="related-products-title">Related Products</h2>
+                        <div class="related-products-wrapper text-left">
+                            <br/>
+                            <h2 class="related-products-title">العقارات المشابهه</h2>
                             <div class="related-products-carousel">
                                 <div class="single-product">
                                     <div class="product-f-image">
@@ -371,83 +410,109 @@
     </div>
 
 
-    <div class="footer-top-area">
+    <div class="footer-top-area" id="map">
         <div class="zigzag-bottom"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 pull-right">
                     <div class="footer-about-us">
-                        <h2>e<span>Electronics</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
+                        <h1>منصور شهاب</h2>
+                        <p>عن منصور شهاب تأسست شركةالمنصور عام 2012م بدأت الشركة نشاطها بالمقاولات البسيطة حتى اصبحت رائدة فى مجالات الانشاءات و الاستثمارات العقارية فى محافظة المنوفية تأسست شركة المنصور عام 2010م بدأت الشركة نشاطها بالمقاولات البسيطة حتى اصبحت رائدة فى مجالات الانشاءات و الاستثمارات العقارية فى محافظة المنوفية</p>
                         <div class="footer-social">
                             <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                             <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
                             <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
                             <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                            <!-- <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a> -->
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-2 col-sm-6 pull-right">
                     <div class="footer-menu">
-                        <h2 class="footer-wid-title">User Navigation </h2>
-                        <ul>
-                            <li><a href="">My account</a></li>
-                            <li><a href="">Order history</a></li>
-                            <li><a href="">Wishlist</a></li>
-                            <li><a href="">Vendor contact</a></li>
-                            <li><a href="">Front page</a></li>
-                        </ul>                        
+                        <h2 class="footer-wid-title">الخريطه</h2>
+                        <!-- <ul>
+                            <li><a href="#">My account</a></li>
+                            <li><a href="#">Order history</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Vendor contact</a></li>
+                            <li><a href="#">Front page</a></li>
+                        </ul>  -->
+                        <ul >
+                            <li class=" ">
+                                <a href="index.html">
+                                    <i class="fa fa-home" aria-hidden="true"></i> الرئيسيه
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="fa fa-map fa-fw" aria-hidden="true"></i> ﺭﺳﻢ ﻫﻨﺪﺳﻲ 
+                                </a>
+                            </li>
+                            <li class=""><a href="#"><i class="fa fa-ravelry" aria-hidden="true"></i> ﺇﻧﺸﺎﺋﺎﺕ</a></li>
+                            <li class=""><a href="single-product.html"><i class="fa fa-building" aria-hidden="true"></i> ﺗﺸﻄﻴﺒﺎﺕ ﻋﺎﻣﻪ</a></li>
+                            <li class=""><a href="checkout.html"><i class="fa fa-line-chart" aria-hidden="true"></i> ﺗﺴﻮﻳﻖ 
+                            </a></li>
+                            <li class=""><a href="cart.html"><i class="fa fa-tree" aria-hidden="true"></i> ﺇﺳﺘﺼﻼﺡ ﺃﺭاﺿﻰ </a></li>
+                            <li class=""><a href="#map"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;  ﺇﺗﺼﻞ ﺑﻨﺎ </a></li>
+                            <li class=""><a href="shop.html"><i class="fa fa-handshake-o" aria-hidden="true"></i> ﺷﻜﺎﻭﻱ ﻭﻣﻘﺘﺮﺣﺎﺕ</a></li>
+                       
+                        </ul>                       
                     </div>
                 </div>
                 
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-menu">
-                        <h2 class="footer-wid-title">Categories</h2>
-                        <ul>
-                            <li><a href="">Mobile Phone</a></li>
-                            <li><a href="">Home accesseries</a></li>
-                            <li><a href="">LED TV</a></li>
-                            <li><a href="">Computer</a></li>
-                            <li><a href="">Gadets</a></li>
-                        </ul>                        
-                    </div>
-                </div>
                 
-                <div class="col-md-3 col-sm-6">
+                
+                <div class="col-md-3 col-sm-6 pull-right">
                     <div class="footer-newsletter">
-                        <h2 class="footer-wid-title">Newsletter</h2>
-                        <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
+                        <h2 class="footer-wid-title">خدمات الرسائل </h2>
+                        <p>سجل البريد الإلكترونى الشخصي الخاص بك ليصلك كل جديد عن مشاريعنا الحاليه والقادمه</p>
                         <div class="newsletter-form">
-                            <input type="email" placeholder="Type your email">
-                            <input type="submit" value="Subscribe">
+                            <form action="#">
+                                <input type="email" placeholder="البريد الشخصي">
+                                <input type="submit" value="سجل">
+                            </form>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 pull-right" >
+                    <div class="footer-menu">
+                        <h2 class="footer-wid-title">عناويننا</h2>
+                        <ul>
+                            <li><i class="fa fa-cc-discover"></i> 56 شارع طلعت حرب - امام الملجأ - شبين الكوم - المنوفيه</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> 01001122101 - 01153440051 - 01226353820</li>
+                            <li><i class="fa fa-envelope-o" aria-hidden="true"></i> info@almansour.com</li>
+                        
+                            <div class="map pull-right" style="width:90%;margin:1%;height="300px>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.3871959119115!2d31.001619929161187!3d30.55856076174823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7d6621ecf25b7%3A0xd3f42be2cc901693!2z2LTYp9mH2YrZhtiMINmC2LPZhSDYtNio2YrZhiDYp9mE2YPZiNmF2Iwg2LTYqNmK2YYg2KfZhNmD2YjZhdiMINin2YTZhdmG2YjZgdmK2Kk!5e0!3m2!1sar!2seg!4v1487074948851" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </ul>                        
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> <!-- End footer top area -->
+    
     <div class="footer-bottom-area">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
                     <div class="copyright">
-                        <p>&copy; 2015 eElectronics. All Rights Reserved. Coded with <i class="fa fa-heart"></i> by <a href="http://wpexpand.com" target="_blank">WP Expand</a></p>
+                        <p>&copy; 2017 Almansour. All Rights Reserved. Coded with <i class="fa fa-heart"></i> by <a href="https://www.linkedin.com/in/ahmed-salama-a982b182" target="_blank">Ahmed Salama</a></p>
                     </div>
                 </div>
                 
-                <div class="col-md-4">
+               <!--  <div class="col-md-4">
                     <div class="footer-card-icon">
                         <i class="fa fa-cc-discover"></i>
                         <i class="fa fa-cc-mastercard"></i>
                         <i class="fa fa-cc-paypal"></i>
                         <i class="fa fa-cc-visa"></i>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
-    </div>
+    </div> <!-- End footer bottom area -->
    
     <!-- Latest jQuery form server -->
     <script src="https://code.jquery.com/jquery.min.js"></script>

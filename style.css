@@ -110,8 +110,8 @@ z-index: 999;}
 .logo-img{
   max-width: 150px;
   max-height: 150px;
-  margin-top: 0px;
-  float: left;
+  margin: 0px auto;
+  /* float: left; */
 }
 .shopping-item {
     border: 1px solid #ddd;
